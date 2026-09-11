@@ -1,0 +1,29 @@
+{
+  "versionName": "0.2.6.alpha",
+  "versionCode": 8,
+  "channel": "alpha",
+  "publishedAt": "2026-09-11",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.6.alpha/wayloam-v0.2.6.alpha.apk",
+  "sizeBytes": 12540872,
+  "sha256": "913cc6815e709968d19577e9f35ff9a9b1ae864e5668bccbf463d46c103f12e7",
+  "summary": "WAYLOAM v0.2.6.alpha fixes update-state handling, improves slider contrast, and makes Android back navigation return to Home instead of closing the app from a secondary screen.",
+  "highlights": [
+    "Settings now shows UP TO DATE after installing the latest version instead of offering the same APK again.",
+    "The daily-target slider inactive segment has stronger contrast against its container while staying inside the WAYLOAM palette.",
+    "Android's back gesture returns Plan, Ride, Gear, Safety and Settings to Home."
+  ],
+  "added": [
+    "Version-aware tracking for downloaded update APKs so stale installers are never reused for a newer release."
+  ],
+  "changed": [
+    "Update checks bypass HTTP caches and compare the latest manifest against the installed version code.",
+    "Inactive slider track color now uses a translucent secondary tone instead of matching the card background.",
+    "Back navigation is handled at the app-section level: secondary destinations go Home first."
+  ],
+  "fixed": [
+    "Fixed the updater repeatedly offering the version that is already installed.",
+    "Fixed completed old downloads remaining visible after an app update.",
+    "Fixed the daily-target inactive track blending into its container.",
+    "Fixed Android back exiting WAYLOAM from non-Home sections."
+  ]
+}
