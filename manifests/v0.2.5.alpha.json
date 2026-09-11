@@ -1,0 +1,30 @@
+{
+  "versionName": "0.2.5.alpha",
+  "versionCode": 7,
+  "channel": "alpha",
+  "publishedAt": "2026-09-11",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.5.alpha/wayloam-v0.2.5.alpha.apk",
+  "sizeBytes": 12540872,
+  "sha256": "eb9596392010304b59a63445a5ad7cb8ed1d813721550a48701cb458fceedcff",
+  "summary": "WAYLOAM v0.2.5.alpha cleans up the everyday UI: a visible expressive daily-target slider, truly full-screen Settings, and much less explanatory copy across the app.",
+  "highlights": [
+    "Daily target now uses a thick segmented Material slider with a vertical thumb, clear gap, and WAYLOAM secondary colors.",
+    "Settings is now a true full-screen destination with no empty navigation bar or white strip at the bottom.",
+    "Planner, Ride, Gear, Safety and Settings have been trimmed to concise rider-facing copy."
+  ],
+  "added": [
+    "A custom Material 3 daily-distance slider using the secondary and secondary-container palette roles."
+  ],
+  "changed": [
+    "Settings renders independently from the main five-destination navigation shell.",
+    "Appearance, update and About labels are shorter and more direct.",
+    "Gear uses simpler Loadout, Packed, Bags and Inventory language.",
+    "Ride removes implementation-roadmap text and keeps only navigation context.",
+    "Safety keeps emergency actions, location and contact controls without implementation commentary."
+  ],
+  "fixed": [
+    "Fixed the low-contrast daily-target slider that was difficult to see.",
+    "Fixed the white bottom strip shown while Settings was open.",
+    "Removed redundant No AI, native-action and prototype explanatory text from the rider interface."
+  ]
+}
