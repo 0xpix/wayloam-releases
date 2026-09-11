@@ -1,0 +1,32 @@
+{
+  "versionName": "0.2.4.alpha",
+  "versionCode": 6,
+  "channel": "alpha",
+  "publishedAt": "2026-09-11",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.4.alpha/wayloam-v0.2.4.alpha.apk",
+  "sizeBytes": 12540872,
+  "sha256": "d2014fe35bbf726c049b3f91b4559272ce2b749ef5e66968d4974d595c0d99d8",
+  "summary": "WAYLOAM v0.2.4.alpha focuses on everyday polish: direct installer handoff, smoother motion, cleaner settings, a clearer home screen, a refined route mark and a more useful bike loadout illustration.",
+  "highlights": [
+    "Downloaded updates now hand directly to Android's package installer instead of sending you to the Downloads folder.",
+    "Settings uses a cleaner single-surface Appearance group for theme, device colors and reduced motion.",
+    "Screen and component motion is calmer and smoother, with the odd Settings exit movement removed.",
+    "The Gear bike illustration is redrawn as a more detailed bikepacking loadout."
+  ],
+  "added": [
+    "Android install-source handoff for signed alpha APK updates.",
+    "A detailed frame bag, saddle bag, handlebar bag, crank, fork and wheel treatment in the Gear bike illustration."
+  ],
+  "changed": [
+    "The in-app WAYLOAM destination dot is smaller so the W-shaped route reads more clearly.",
+    "Home now leads with today's actual stage instead of generic landing-page copy.",
+    "Planner sliders use softer secondary-container track colors.",
+    "Navigation, buttons, cards and selection states use non-bouncy low-stiffness motion.",
+    "Settings keeps stable bottom layout geometry while opening and closing to prevent vertical jumps."
+  ],
+  "fixed": [
+    "Removed the manual Open Downloads step from the updater.",
+    "Removed nested card-inside-card styling from Use device colors and Reduce motion settings.",
+    "Fixed the strange Settings exit transition that made the page appear to move vertically."
+  ]
+}
