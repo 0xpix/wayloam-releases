@@ -1,0 +1,34 @@
+{
+  "versionName": "0.2.2.alpha",
+  "versionCode": 4,
+  "channel": "alpha",
+  "publishedAt": "2026-09-11",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.2.alpha/wayloam-v0.2.2.alpha.apk",
+  "sizeBytes": 8313282,
+  "sha256": "9047aef031b3a3923158db5d92d47c5bc912df52f02ad4dc9fc995087aa77046",
+  "summary": "WAYLOAM now has a richer Material 3 color system, light mode, Material Symbols, a new route-based logo, persistent appearance controls, and a cleaner update experience.",
+  "highlights": [
+    "New emerald, indigo and amber Material 3 palette with full light and dark themes.",
+    "System, Light and Dark appearance modes now persist on the device.",
+    "Material Symbols replace the temporary character and emoji-style navigation icons.",
+    "The new WAYLOAM mark is a flowing W-shaped route with origin and destination points."
+  ],
+  "added": [
+    "Optional Android dynamic color on Android 12 and newer.",
+    "Reduced-motion preference for simpler screen transitions.",
+    "Editable local emergency contact in Settings.",
+    "Android 13 themed launcher icon support.",
+    "More expressive route, ride, gear and safety iconography."
+  ],
+  "changed": [
+    "Typography returns closer to the standard Material 3 scale instead of relying on oversized display text.",
+    "Home, Planner, Ride, Gear, Safety and Settings now use semantic Material color roles instead of hardcoded black and white.",
+    "Primary, secondary and tertiary containers are used intentionally to create visual hierarchy across cards, metrics, actions and selected states.",
+    "Navigation and major interactive surfaces keep spring-based expressive shape and transition motion."
+  ],
+  "fixed": [
+    "Release notes are no longer shown in Settings when the installed app is already up to date.",
+    "The emergency contact is no longer hardcoded into the Safety screen.",
+    "The themed launcher icon is isolated to Android 13+ resources so older supported Android versions keep a compatible adaptive icon."
+  ]
+}
