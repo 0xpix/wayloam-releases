@@ -1,0 +1,33 @@
+{
+  "versionName": "0.2.1.alpha",
+  "versionCode": 3,
+  "channel": "alpha",
+  "publishedAt": "2026-09-11",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.1.alpha/wayloam-v0.2.1.alpha.apk",
+  "sizeBytes": 8295422,
+  "sha256": "e849ecaeec481238292104dbfa0b8f17596c08c1b29a0993bb47e393ebd10238",
+  "summary": "WAYLOAM now follows the Material 3 Expressive design language with large Google Sans Flex typography, system-safe edge-to-edge layout, springy shape motion, and monochrome Noto Emoji navigation.",
+  "highlights": [
+    "Material 3 Expressive is now the app-wide visual and interaction direction.",
+    "Content no longer overlaps the phone status or navigation bars.",
+    "Google Sans Flex is the default UI typeface with much larger editorial hierarchy.",
+    "The bottom navigation uses monochrome Noto Emoji instead of placeholder dots."
+  ],
+  "added": [
+    "Expressive spring motion and shape-changing navigation indicators.",
+    "Large Google Sans Flex editorial type scale.",
+    "Official Google Fonts Android provider integration for Google Sans Flex and Noto Emoji.",
+    "Expressive journey hero card with large route and distance typography."
+  ],
+  "changed": [
+    "Home now uses a big-type hierarchy and flexible container treatment inspired by Material 3 Expressive references.",
+    "Buttons morph their corner shape while pressed and use larger touch targets.",
+    "Navigation uses Material 3 inset-aware primitives with custom expressive selection motion.",
+    "The build stays on the API-36-compatible Compose line while preserving the Expressive design treatment."
+  ],
+  "fixed": [
+    "Removed zero Scaffold content insets that caused content to render underneath the device status bar.",
+    "Bottom navigation now consumes system navigation-bar insets correctly.",
+    "Removed placeholder circle navigation icons."
+  ]
+}
