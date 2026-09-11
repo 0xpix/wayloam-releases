@@ -1,33 +1,33 @@
 {
-  "versionName": "0.2.0.alpha",
-  "versionCode": 2,
+  "versionName": "0.2.1.alpha",
+  "versionCode": 3,
   "channel": "alpha",
   "publishedAt": "2026-09-11",
-  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.0.alpha/wayloam-v0.2.0.alpha.apk",
-  "sizeBytes": 8275387,
-  "sha256": "ef8c5d27183f44f16d61fb0d92590951c9794dd0f62fd7b9c26f95a342279236",
-  "summary": "WAYLOAM can now check the public alpha channel from inside the app, show a structured changelog, and download a newer APK without exposing the private source repository.",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.1.alpha/wayloam-v0.2.1.alpha.apk",
+  "sizeBytes": 8295422,
+  "sha256": "e849ecaeec481238292104dbfa0b8f17596c08c1b29a0993bb47e393ebd10238",
+  "summary": "WAYLOAM now follows the Material 3 Expressive design language with large Google Sans Flex typography, system-safe edge-to-edge layout, springy shape motion, and monochrome Noto Emoji navigation.",
   "highlights": [
-    "Settings now has a dedicated Software Update area.",
-    "What’s New is grouped into Added, Changed, and Fixed sections.",
-    "Updates are fetched from the public wayloam-releases repository with no embedded GitHub token.",
-    "APK downloads use Android’s system Download Manager."
+    "Material 3 Expressive is now the app-wide visual and interaction direction.",
+    "Content no longer overlaps the phone status or navigation bars.",
+    "Google Sans Flex is the default UI typeface with much larger editorial hierarchy.",
+    "The bottom navigation uses monochrome Noto Emoji instead of placeholder dots."
   ],
   "added": [
-    "Settings screen with app version, update channel, release source, and update status.",
-    "Automatic update check when Settings opens, plus a manual Check again action.",
-    "Structured What’s New cards driven by public release metadata.",
-    "In-app APK download using Android Download Manager with download progress and Open Downloads handoff.",
-    "Public release manifest format for future alpha updates."
+    "Expressive spring motion and shape-changing navigation indicators.",
+    "Large Google Sans Flex editorial type scale.",
+    "Official Google Fonts Android provider integration for Google Sans Flex and Noto Emoji.",
+    "Expressive journey hero card with large route and distance typography."
   ],
   "changed": [
-    "Settings is accessible from Home without overcrowding the five-item ride navigation bar.",
-    "The release pipeline now targets the public 0xpix/wayloam-releases repository while keeping source code private.",
-    "Alpha releases are prepared for a dedicated stable signing key instead of runner-generated debug signing.",
-    "Version naming is simplified to v0.2.0.alpha without an extra alpha sequence suffix."
+    "Home now uses a big-type hierarchy and flexible container treatment inspired by Material 3 Expressive references.",
+    "Buttons morph their corner shape while pressed and use larger touch targets.",
+    "Navigation uses Material 3 inset-aware primitives with custom expressive selection motion.",
+    "The build stays on the API-36-compatible Compose line while preserving the Expressive design treatment."
   ],
   "fixed": [
-    "Corrected release URLs after the source repository rename from waylloam to wayloam.",
-    "Separated source-code distribution from APK distribution so the updater never needs credentials for the private repository."
+    "Removed zero Scaffold content insets that caused content to render underneath the device status bar.",
+    "Bottom navigation now consumes system navigation-bar insets correctly.",
+    "Removed placeholder circle navigation icons."
   ]
 }
