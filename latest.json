@@ -1,34 +1,25 @@
 {
-  "versionName": "0.2.2.alpha",
-  "versionCode": 4,
+  "versionName": "0.2.3.alpha",
+  "versionCode": 5,
   "channel": "alpha",
   "publishedAt": "2026-09-11",
-  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.2.alpha/wayloam-v0.2.2.alpha.apk",
-  "sizeBytes": 8313282,
-  "sha256": "9047aef031b3a3923158db5d92d47c5bc912df52f02ad4dc9fc995087aa77046",
-  "summary": "WAYLOAM now has a richer Material 3 color system, light mode, Material Symbols, a new route-based logo, persistent appearance controls, and a cleaner update experience.",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.3.alpha/wayloam-v0.2.3.alpha.apk",
+  "sizeBytes": 12540828,
+  "sha256": "96febb04de182301c49652c3bb5383cb9d4d15abdc9b9bac2f2f8b291bc5518d",
+  "summary": "WAYLOAM v0.2.3.alpha fixes missing UI icons with bundled vector assets and sharpens the route identity with a cleaner mark and solid destination point.",
   "highlights": [
-    "New emerald, indigo and amber Material 3 palette with full light and dark themes.",
-    "System, Light and Dark appearance modes now persist on the device.",
-    "Material Symbols replace the temporary character and emoji-style navigation icons.",
-    "The new WAYLOAM mark is a flowing W-shaped route with origin and destination points."
+    "Navigation and in-app symbols now use bundled Compose vector icons instead of a downloadable icon font.",
+    "The WAYLOAM route mark has a cleaner W-shaped flow with a small origin and a solid destination point.",
+    "The launcher, Android themed icon, in-app mark and repository wordmark now share the same endpoint treatment."
   ],
-  "added": [
-    "Optional Android dynamic color on Android 12 and newer.",
-    "Reduced-motion preference for simpler screen transitions.",
-    "Editable local emergency contact in Settings.",
-    "Android 13 themed launcher icon support.",
-    "More expressive route, ride, gear and safety iconography."
-  ],
+  "added": [],
   "changed": [
-    "Typography returns closer to the standard Material 3 scale instead of relying on oversized display text.",
-    "Home, Planner, Ride, Gear, Safety and Settings now use semantic Material color roles instead of hardcoded black and white.",
-    "Primary, secondary and tertiary containers are used intentionally to create visual hierarchy across cards, metrics, actions and selected states.",
-    "Navigation and major interactive surfaces keep spring-based expressive shape and transition motion."
+    "The home logo is smaller and more restrained so it behaves like a real app mark rather than a large header graphic.",
+    "The route mark now connects cleanly into the destination marker and uses stronger origin/destination hierarchy."
   ],
   "fixed": [
-    "Release notes are no longer shown in Settings when the installed app is already up to date.",
-    "The emergency contact is no longer hardcoded into the Safety screen.",
-    "The themed launcher icon is isolated to Android 13+ resources so older supported Android versions keep a compatible adaptive icon."
+    "Fixed missing navigation and interface icons by replacing runtime font ligatures with bundled Material vector icons.",
+    "Fixed the campsite symbol fallback that previously caused an icon compile issue.",
+    "Fixed the hollow destination ring in the WAYLOAM logo; the destination marker is now filled."
   ]
 }
