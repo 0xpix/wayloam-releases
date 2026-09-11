@@ -1,33 +1,34 @@
 {
-  "versionName": "0.2.1.alpha",
-  "versionCode": 3,
+  "versionName": "0.2.2.alpha",
+  "versionCode": 4,
   "channel": "alpha",
   "publishedAt": "2026-09-11",
-  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.1.alpha/wayloam-v0.2.1.alpha.apk",
-  "sizeBytes": 8295422,
-  "sha256": "e849ecaeec481238292104dbfa0b8f17596c08c1b29a0993bb47e393ebd10238",
-  "summary": "WAYLOAM now follows the Material 3 Expressive design language with large Google Sans Flex typography, system-safe edge-to-edge layout, springy shape motion, and monochrome Noto Emoji navigation.",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.2.alpha/wayloam-v0.2.2.alpha.apk",
+  "sizeBytes": 8313282,
+  "sha256": "9047aef031b3a3923158db5d92d47c5bc912df52f02ad4dc9fc995087aa77046",
+  "summary": "WAYLOAM now has a richer Material 3 color system, light mode, Material Symbols, a new route-based logo, persistent appearance controls, and a cleaner update experience.",
   "highlights": [
-    "Material 3 Expressive is now the app-wide visual and interaction direction.",
-    "Content no longer overlaps the phone status or navigation bars.",
-    "Google Sans Flex is the default UI typeface with much larger editorial hierarchy.",
-    "The bottom navigation uses monochrome Noto Emoji instead of placeholder dots."
+    "New emerald, indigo and amber Material 3 palette with full light and dark themes.",
+    "System, Light and Dark appearance modes now persist on the device.",
+    "Material Symbols replace the temporary character and emoji-style navigation icons.",
+    "The new WAYLOAM mark is a flowing W-shaped route with origin and destination points."
   ],
   "added": [
-    "Expressive spring motion and shape-changing navigation indicators.",
-    "Large Google Sans Flex editorial type scale.",
-    "Official Google Fonts Android provider integration for Google Sans Flex and Noto Emoji.",
-    "Expressive journey hero card with large route and distance typography."
+    "Optional Android dynamic color on Android 12 and newer.",
+    "Reduced-motion preference for simpler screen transitions.",
+    "Editable local emergency contact in Settings.",
+    "Android 13 themed launcher icon support.",
+    "More expressive route, ride, gear and safety iconography."
   ],
   "changed": [
-    "Home now uses a big-type hierarchy and flexible container treatment inspired by Material 3 Expressive references.",
-    "Buttons morph their corner shape while pressed and use larger touch targets.",
-    "Navigation uses Material 3 inset-aware primitives with custom expressive selection motion.",
-    "The build stays on the API-36-compatible Compose line while preserving the Expressive design treatment."
+    "Typography returns closer to the standard Material 3 scale instead of relying on oversized display text.",
+    "Home, Planner, Ride, Gear, Safety and Settings now use semantic Material color roles instead of hardcoded black and white.",
+    "Primary, secondary and tertiary containers are used intentionally to create visual hierarchy across cards, metrics, actions and selected states.",
+    "Navigation and major interactive surfaces keep spring-based expressive shape and transition motion."
   ],
   "fixed": [
-    "Removed zero Scaffold content insets that caused content to render underneath the device status bar.",
-    "Bottom navigation now consumes system navigation-bar insets correctly.",
-    "Removed placeholder circle navigation icons."
+    "Release notes are no longer shown in Settings when the installed app is already up to date.",
+    "The emergency contact is no longer hardcoded into the Safety screen.",
+    "The themed launcher icon is isolated to Android 13+ resources so older supported Android versions keep a compatible adaptive icon."
   ]
 }
