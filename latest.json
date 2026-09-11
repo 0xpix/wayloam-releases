@@ -1,32 +1,30 @@
 {
-  "versionName": "0.2.4.alpha",
-  "versionCode": 6,
+  "versionName": "0.2.5.alpha",
+  "versionCode": 7,
   "channel": "alpha",
   "publishedAt": "2026-09-11",
-  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.4.alpha/wayloam-v0.2.4.alpha.apk",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.2.5.alpha/wayloam-v0.2.5.alpha.apk",
   "sizeBytes": 12540872,
-  "sha256": "d2014fe35bbf726c049b3f91b4559272ce2b749ef5e66968d4974d595c0d99d8",
-  "summary": "WAYLOAM v0.2.4.alpha focuses on everyday polish: direct installer handoff, smoother motion, cleaner settings, a clearer home screen, a refined route mark and a more useful bike loadout illustration.",
+  "sha256": "eb9596392010304b59a63445a5ad7cb8ed1d813721550a48701cb458fceedcff",
+  "summary": "WAYLOAM v0.2.5.alpha cleans up the everyday UI: a visible expressive daily-target slider, truly full-screen Settings, and much less explanatory copy across the app.",
   "highlights": [
-    "Downloaded updates now hand directly to Android's package installer instead of sending you to the Downloads folder.",
-    "Settings uses a cleaner single-surface Appearance group for theme, device colors and reduced motion.",
-    "Screen and component motion is calmer and smoother, with the odd Settings exit movement removed.",
-    "The Gear bike illustration is redrawn as a more detailed bikepacking loadout."
+    "Daily target now uses a thick segmented Material slider with a vertical thumb, clear gap, and WAYLOAM secondary colors.",
+    "Settings is now a true full-screen destination with no empty navigation bar or white strip at the bottom.",
+    "Planner, Ride, Gear, Safety and Settings have been trimmed to concise rider-facing copy."
   ],
   "added": [
-    "Android install-source handoff for signed alpha APK updates.",
-    "A detailed frame bag, saddle bag, handlebar bag, crank, fork and wheel treatment in the Gear bike illustration."
+    "A custom Material 3 daily-distance slider using the secondary and secondary-container palette roles."
   ],
   "changed": [
-    "The in-app WAYLOAM destination dot is smaller so the W-shaped route reads more clearly.",
-    "Home now leads with today's actual stage instead of generic landing-page copy.",
-    "Planner sliders use softer secondary-container track colors.",
-    "Navigation, buttons, cards and selection states use non-bouncy low-stiffness motion.",
-    "Settings keeps stable bottom layout geometry while opening and closing to prevent vertical jumps."
+    "Settings renders independently from the main five-destination navigation shell.",
+    "Appearance, update and About labels are shorter and more direct.",
+    "Gear uses simpler Loadout, Packed, Bags and Inventory language.",
+    "Ride removes implementation-roadmap text and keeps only navigation context.",
+    "Safety keeps emergency actions, location and contact controls without implementation commentary."
   ],
   "fixed": [
-    "Removed the manual Open Downloads step from the updater.",
-    "Removed nested card-inside-card styling from Use device colors and Reduce motion settings.",
-    "Fixed the strange Settings exit transition that made the page appear to move vertically."
+    "Fixed the low-contrast daily-target slider that was difficult to see.",
+    "Fixed the white bottom strip shown while Settings was open.",
+    "Removed redundant No AI, native-action and prototype explanatory text from the rider interface."
   ]
 }
