@@ -1,0 +1,35 @@
+{
+  "versionName": "0.4.1.alpha",
+  "versionCode": 13,
+  "channel": "alpha",
+  "publishedAt": "2026-09-12",
+  "apkUrl": "https://github.com/loam-tools/wayloam-releases/releases/download/v0.4.1.alpha/wayloam-v0.4.1.alpha.apk",
+  "sizeBytes": 63815569,
+  "sha256": "14606d24df038ab7cc2451d108a1d36817933bc2d59b35950188be96e1ff04f7",
+  "summary": "WAYLOAM v0.4.1.alpha polishes the embedded-routing experience with persistent route builds, phased progress, a map-first Ride screen, richer stage information and selectable expedition POI layers.",
+  "highlights": [
+    "Route builds continue when you leave Planner and expose meaningful progress across the app.",
+    "Ride is now map-first with current-stage distance/progress, whole-trip distance and ETA in floating navigation surfaces.",
+    "Stages can be isolated on the map and now show ride time, climbing, arrival estimates and useful services.",
+    "Camps, water, food, repair, shelters and towns use distinct markers with selectable map layers."
+  ],
+  "added": [
+    "App-wide route-build progress that survives navigation between sections.",
+    "Single-stage map isolation in Planner and Ride.",
+    "Useful stage metrics and stage-specific POI summaries.",
+    "Distinct route-notice, climb and expedition POI iconography.",
+    "Selectable POI map layers for camps, shelters, water, food, repair and towns."
+  ],
+  "changed": [
+    "Ride mode is map-first with floating stage and trip navigation information.",
+    "Map camera updates avoid refitting the whole route on every GPS location change.",
+    "Progress indicators use Material 3 Expressive native linear wavy indicators.",
+    "WAYLOAM compiles against Android 37.2 while retaining targetSdk 36."
+  ],
+  "fixed": [
+    "Leaving Planner no longer cancels an in-progress route build.",
+    "Route-building no longer appears frozen during long embedded-router work because each major phase reports progress.",
+    "Route notices and climbs no longer reuse indistinguishable presentation.",
+    "Map POIs can be filtered so useful expedition information does not overwhelm the route."
+  ]
+}
