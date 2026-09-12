@@ -1,40 +1,29 @@
 {
-  "versionName": "0.3.0.alpha",
-  "versionCode": 9,
+  "versionName": "0.3.1.alpha",
+  "versionCode": 10,
   "channel": "alpha",
   "publishedAt": "2026-09-12",
-  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.3.0.alpha/wayloam-v0.3.0.alpha.apk",
-  "sizeBytes": 62604801,
-  "sha256": "d8fa036be43bc856f0092bbcc4b2d5952d2981523d4f8277f63e6de225b58915",
-  "summary": "WAYLOAM v0.3.0.alpha replaces the prototype route with real OpenStreetMap-based planning, useful route services, persistent multi-day stages and a live GPS ride view.",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.3.1.alpha/wayloam-v0.3.1.alpha.apk",
+  "sizeBytes": 62621185,
+  "sha256": "d3fd3d3332c2c5ecfd490bde1740abcd7922cdd010fd2baa1e9e74cd4e87b51e",
+  "summary": "WAYLOAM v0.3.1.alpha fixes Build route failures caused by temporary public-service errors and unsupported BRouter profile overrides.",
   "highlights": [
-    "Build real bicycle routes from place names with OpenStreetMap geocoding and BRouter profiles for Direct, Touring and Bikepacking.",
-    "Preview the generated route on a native MapLibre map with an elevation profile and nearby water, food, repair, camp and shelter points.",
-    "Split long rides around the daily target, prefer useful camps/shelters/towns near stage boundaries, and adjust day boundaries by 5 km without rebuilding the route.",
-    "Track live position, completed and remaining distance, ride ETA, off-route distance and the next useful waypoint in Ride mode."
+    "Build route now falls back to a second BRouter service when the primary public router is unavailable or overloaded.",
+    "Place search falls back from OpenStreetMap Nominatim to Photon instead of failing the whole trip.",
+    "Bikepacking no longer sends an unsupported allow_steps profile override to BRouter."
   ],
   "added": [
-    "Persistent route geometry, discovered route services and custom stage boundaries.",
-    "Automatic multi-day stage splitting with useful-stop preference near daily targets.",
-    "Elevation profile visualization from BRouter route geometry.",
-    "Route-corridor OpenStreetMap services for water, food, bicycle repair, camps and shelters.",
-    "Live Android GPS tracking with an on-route/off-route state and next-waypoint cue.",
-    "MapLibre route/service rendering with OpenStreetMap/OpenFreeMap attribution.",
-    "Route math tests for stage coverage, useful stops, boundary edits and projected ride progress."
+    "Photon fallback for place search.",
+    "Secondary BRouter backend fallback for route calculation.",
+    "Cleaner service-error handling for temporary HTTP failures and timeouts."
   ],
   "changed": [
-    "Fresh installs start with an empty trip instead of demo Heidelberg and Oslo locations.",
-    "Home reflects the real active trip and shows a clean empty state when no route exists.",
-    "The daily-target slider has a more visible inactive segment while keeping the WAYLOAM palette.",
-    "Settings appearance controls are flatter and less visually nested.",
-    "System and navigation bars are transparent edge-to-edge to remove the Settings bottom strip.",
-    "The top WAYLOAM mark is smaller and better balanced."
+    "Route-service errors now distinguish place-search problems from routing-service congestion.",
+    "Route-corridor POI lookup remains optional and can fail without losing the generated route."
   ],
   "fixed": [
-    "The updater now compares the manifest against the package version Android actually has installed.",
-    "Returning from the unknown-app-source permission screen resumes the APK installer automatically.",
-    "The updater opens Android's package installer directly instead of sending the user to the Downloads folder.",
-    "Android back from a secondary section returns to Home before exiting.",
-    "The active trip, current section, services and manual stage edits survive normal app recreation."
+    "Fixed Build route showing a retry-later/server error when a public OSM or BRouter service is temporarily busy.",
+    "Removed unsupported BRouter profile parameters from the default Bikepacking request.",
+    "Prevented a single public geocoder or routing endpoint from being a hard dependency for every route build."
   ]
 }
