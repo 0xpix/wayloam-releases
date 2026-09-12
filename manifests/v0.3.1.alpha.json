@@ -1,0 +1,29 @@
+{
+  "versionName": "0.3.1.alpha",
+  "versionCode": 10,
+  "channel": "alpha",
+  "publishedAt": "2026-09-12",
+  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.3.1.alpha/wayloam-v0.3.1.alpha.apk",
+  "sizeBytes": 62621185,
+  "sha256": "d3fd3d3332c2c5ecfd490bde1740abcd7922cdd010fd2baa1e9e74cd4e87b51e",
+  "summary": "WAYLOAM v0.3.1.alpha fixes Build route failures caused by temporary public-service errors and unsupported BRouter profile overrides.",
+  "highlights": [
+    "Build route now falls back to a second BRouter service when the primary public router is unavailable or overloaded.",
+    "Place search falls back from OpenStreetMap Nominatim to Photon instead of failing the whole trip.",
+    "Bikepacking no longer sends an unsupported allow_steps profile override to BRouter."
+  ],
+  "added": [
+    "Photon fallback for place search.",
+    "Secondary BRouter backend fallback for route calculation.",
+    "Cleaner service-error handling for temporary HTTP failures and timeouts."
+  ],
+  "changed": [
+    "Route-service errors now distinguish place-search problems from routing-service congestion.",
+    "Route-corridor POI lookup remains optional and can fail without losing the generated route."
+  ],
+  "fixed": [
+    "Fixed Build route showing a retry-later/server error when a public OSM or BRouter service is temporarily busy.",
+    "Removed unsupported BRouter profile parameters from the default Bikepacking request.",
+    "Prevented a single public geocoder or routing endpoint from being a hard dependency for every route build."
+  ]
+}
