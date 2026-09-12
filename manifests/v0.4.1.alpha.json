@@ -4,32 +4,32 @@
   "channel": "alpha",
   "publishedAt": "2026-09-12",
   "apkUrl": "https://github.com/loam-tools/wayloam-releases/releases/download/v0.4.1.alpha/wayloam-v0.4.1.alpha.apk",
-  "sizeBytes": 63815569,
-  "sha256": "14606d24df038ab7cc2451d108a1d36817933bc2d59b35950188be96e1ff04f7",
-  "summary": "WAYLOAM v0.4.1.alpha polishes the embedded-routing experience with persistent route builds, phased progress, a map-first Ride screen, richer stage information and selectable expedition POI layers.",
+  "sizeBytes": 63831953,
+  "sha256": "c7c81a2565e9b3759728b7f4a174d30c583b101bfd21aef02b32db8c5a5d9e8d",
+  "summary": "WAYLOAM v0.4.2.alpha adds real router-generated maneuver guidance and hardens camps, water, food and bicycle-service discovery for long-distance routes.",
   "highlights": [
-    "Route builds continue when you leave Planner and expose meaningful progress across the app.",
-    "Ride is now map-first with current-stage distance/progress, whole-trip distance and ETA in floating navigation surfaces.",
-    "Stages can be isolated on the map and now show ride time, climbing, arrival estimates and useful services.",
-    "Camps, water, food, repair, shelters and towns use distinct markers with selectable map layers."
+    "Ride now shows real BRouter-derived turn, keep, exit and roundabout maneuvers with distance to the next instruction.",
+    "Long-route service discovery is chunked across the corridor with public Overpass fallback and partial-success retention.",
+    "Water, camps, shelters, food and bicycle services cover a broader set of useful OpenStreetMap tags.",
+    "Planner and Ride expose loaded POI counts and a Retry stops action when route-service discovery genuinely fails."
   ],
   "added": [
-    "App-wide route-build progress that survives navigation between sections.",
-    "Single-stage map isolation in Planner and Ride.",
-    "Useful stage metrics and stage-specific POI summaries.",
-    "Distinct route-notice, climb and expedition POI iconography.",
-    "Selectable POI map layers for camps, shelters, water, food, repair and towns."
+    "Typed graph-derived maneuver data from the pinned WAYLOAM Router build.",
+    "Next-maneuver instruction and distance in Ride mode.",
+    "Roundabout exit-number guidance when available.",
+    "Loaded POI counts in map-layer controls.",
+    "Retryable route-service failure state in Planner and Ride.",
+    "Broader expedition POI coverage including huts, cafés, restaurants, bakeries, greengrocers and marketplaces."
   ],
   "changed": [
-    "Ride mode is map-first with floating stage and trip navigation information.",
-    "Map camera updates avoid refitting the whole route on every GPS location change.",
-    "Progress indicators use Material 3 Expressive native linear wavy indicators.",
-    "WAYLOAM compiles against Android 37.2 while retaining targetSdk 36."
+    "Nearby-service discovery queries long routes in overlapping chunks instead of one large Overpass request.",
+    "Transient Overpass failures fall back across public endpoints and successful chunks are preserved.",
+    "Maneuvers are stitched and cached with long routes so navigation guidance survives cache reuse and app restarts."
   ],
   "fixed": [
-    "Leaving Planner no longer cancels an in-progress route build.",
-    "Route-building no longer appears frozen during long embedded-router work because each major phase reports progress.",
-    "Route notices and climbs no longer reuse indistinguishable presentation.",
-    "Map POIs can be filtered so useful expedition information does not overwhelm the route."
+    "A temporary POI-service outage no longer appears to the rider as a route with zero camps, water or shops.",
+    "Planner now passes real per-category POI counts to the map-layer menu just like Ride.",
+    "Stale route-cache artifacts are removed by explicit router cache clearing.",
+    "The pinned router Android instrumentation suite is green on API 36."
   ]
 }
