@@ -1,0 +1,32 @@
+{
+  "versionName": "0.4.3.alpha",
+  "versionCode": 15,
+  "channel": "alpha",
+  "publishedAt": "2026-09-12",
+  "apkUrl": "https://github.com/loam-tools/wayloam-releases/releases/download/v0.4.3.alpha/wayloam-v0.4.3.alpha.apk",
+  "sizeBytes": 63831953,
+  "sha256": "0ecade66174145f6bdefb87c60d99b1d6d4ddc0b81827fa63f2e189fb6c11e3f",
+  "summary": "WAYLOAM v0.4.3.alpha makes expedition stops actually visible, turns Ride into a full-screen navigation surface, and replaces arbitrary distance stage cuts with verified overnight-stop planning.",
+  "highlights": [
+    "Water, camps, shelters, food and bicycle-service markers are no longer suppressed by basemap label collisions.",
+    "Saved routes with no loaded expedition stops automatically refresh stop discovery when reopened.",
+    "Ride removes the app bottom navigation and uses a single top back control over the full-screen map.",
+    "Automatic stages target the requested daily distance but end only at verified camps, shelters or huts."
+  ],
+  "added": [
+    "Automatic route-stop refresh for restored routes whose persisted POI list is empty.",
+    "Verified overnight-aware stage selection around the rider's daily distance target.",
+    "A compact top back control for full-screen Ride."
+  ],
+  "changed": [
+    "MapLibre expedition markers ignore basemap label placement and use larger always-visible route-critical symbols.",
+    "An 80 km stage target can extend to a nearby verified camp, for example 90 km, instead of ending at an arbitrary point.",
+    "Ride no longer shows the app-wide bottom navigation bar.",
+    "Towns are no longer assumed to be valid overnight stops without proven sleeping infrastructure."
+  ],
+  "fixed": [
+    "Existing saved routes no longer remain permanently empty of camps, water and shops after an earlier POI load missed or had not completed.",
+    "Automatic stage generation no longer creates overnight stops in the middle of a road.",
+    "Route-critical water, camp, food and repair markers no longer disappear due to MapLibre symbol collision rules."
+  ]
+}
