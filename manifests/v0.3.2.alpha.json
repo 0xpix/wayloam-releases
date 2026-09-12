@@ -3,7 +3,7 @@
   "versionCode": 11,
   "channel": "alpha",
   "publishedAt": "2026-09-12",
-  "apkUrl": "https://github.com/0xpix/wayloam-releases/releases/download/v0.3.2.alpha/wayloam-v0.3.2.alpha.apk",
+  "apkUrl": "https://github.com/loam-tools/wayloam-releases/releases/download/v0.3.2.alpha/wayloam-v0.3.2.alpha.apk",
   "sizeBytes": 62621185,
   "sha256": "67c36642e6c9cf35220a91520a43675b7ae6b8e4d9dd6687337614c8effa099b",
   "summary": "WAYLOAM v0.3.2.alpha makes route building much faster, stabilizes in-app downloads and introduces expressive wavy progress throughout the app.",
