@@ -1,32 +1,32 @@
 {
-  "versionName": "0.4.3.alpha",
-  "versionCode": 15,
+  "versionName": "0.4.4.alpha",
+  "versionCode": 16,
   "channel": "alpha",
   "publishedAt": "2026-09-12",
-  "apkUrl": "https://github.com/loam-tools/wayloam-releases/releases/download/v0.4.3.alpha/wayloam-v0.4.3.alpha.apk",
+  "apkUrl": "https://github.com/loam-tools/wayloam-releases/releases/download/v0.4.4.alpha/wayloam-v0.4.4.alpha.apk",
   "sizeBytes": 63831953,
-  "sha256": "0ecade66174145f6bdefb87c60d99b1d6d4ddc0b81827fa63f2e189fb6c11e3f",
-  "summary": "WAYLOAM v0.4.3.alpha makes expedition stops actually visible, turns Ride into a full-screen navigation surface, and replaces arbitrary distance stage cuts with verified overnight-stop planning.",
+  "sha256": "b22a40fd99700ee647945daacba575e0fb7679e6d354a179f88331710771ddaa",
+  "summary": "WAYLOAM v0.4.4.alpha fixes long-distance expedition-stop discovery so camps, water, food and bike services follow the real bicycle corridor instead of sparse straight-line approximations.",
   "highlights": [
-    "Water, camps, shelters, food and bicycle-service markers are no longer suppressed by basemap label collisions.",
-    "Saved routes with no loaded expedition stops automatically refresh stop discovery when reopened.",
-    "Ride removes the app bottom navigation and uses a single top back control over the full-screen map.",
-    "Automatic stages target the requested daily distance but end only at verified camps, shelters or huts."
+    "Long routes now use distance-aware POI corridor sampling instead of collapsing the whole trip to 48 geometry points.",
+    "A roughly 1,668 km route keeps hundreds of corridor samples, preventing winding sections from losing nearby camps and services.",
+    "Overpass discovery runs in overlapping chunks with multiple public endpoint fallbacks and a wider route-matching tolerance.",
+    "A long route that returns zero usable POIs is surfaced as a retryable enrichment failure instead of silently becoming one giant stage."
   ],
   "added": [
-    "Automatic route-stop refresh for restored routes whose persisted POI list is empty.",
-    "Verified overnight-aware stage selection around the rider's daily distance target.",
-    "A compact top back control for full-screen Ride."
+    "Regression coverage for continent-scale POI corridor density and maximum sample gaps.",
+    "A third public Overpass fallback endpoint for expedition-stop discovery.",
+    "Explicit long-route empty-result validation so zero markers cannot masquerade as valid data."
   ],
   "changed": [
-    "MapLibre expedition markers ignore basemap label placement and use larger always-visible route-critical symbols.",
-    "An 80 km stage target can extend to a nearby verified camp, for example 90 km, instead of ending at an arbitrary point.",
-    "Ride no longer shows the app-wide bottom navigation bar.",
-    "Towns are no longer assumed to be valid overnight stops without proven sleeping infrastructure."
+    "POI corridor samples are spaced by travelled distance along the actual route rather than by raw geometry index.",
+    "Expedition POI discovery retains up to 2,500 route services instead of truncating long trips to the first 400 results.",
+    "POI queries use overlapping route chunks with limited concurrency so long trips remain practical without flooding public OSM services.",
+    "The enrichment service is now focused only on elevation and expedition services; primary bicycle routing remains fully embedded and local."
   ],
   "fixed": [
-    "Existing saved routes no longer remain permanently empty of camps, water and shops after an earlier POI load missed or had not completed.",
-    "Automatic stage generation no longer creates overnight stops in the middle of a road.",
-    "Route-critical water, camp, food and repair markers no longer disappear due to MapLibre symbol collision rules."
+    "Fixed long winding routes losing nearly every camp, water point and shop because sparse query chords drifted away from the real bicycle route.",
+    "Fixed successful-but-empty Overpass responses silently producing a 1,000+ km single stage with no markers.",
+    "Fixed the long-route POI cap disproportionately keeping only early-trip services and starving later stages of overnight stops."
   ]
 }
